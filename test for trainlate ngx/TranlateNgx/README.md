@@ -38,7 +38,7 @@ Finally, you can use ngx-translate in your Angular project. You have to import T
 
 The forRoot static method is a convention that provides and configures services at the same time. Make sure you only call this method in the root module of your application, most of the time called AppModule. This method allows you to configure the TranslateModule by specifying a loader, a parser and/or a missing translations handler.
 
-(import {BrowserModule} from '@angular/platform-browser';
+`import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {TranslateModule} from '@ngx-translate/core';
 
@@ -49,7 +49,7 @@ import {TranslateModule} from '@ngx-translate/core';
     ],
     bootstrap: [AppComponent]
 })
-export class AppModule { })
+export class AppModule { })`
 
 #SharedModule
 If you use a SharedModule that you import in multiple other feature modules, you can export the TranslateModule to make sure you don't have to import it in every module.
