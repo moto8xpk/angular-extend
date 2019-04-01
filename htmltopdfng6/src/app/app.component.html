@@ -1,0 +1,12 @@
+<mat-toolbar color="accent">
+  <span>Manav Pandya - C#Corner</span>
+  <span class="demo-toolbar"></span>
+  <button mat-button [matMenuTriggerFor]="menu">Select Conversion From Below Menu</button>
+  <mat-menu #menu="matMenu">
+      <button [routerLink]="['/toimage']" mat-menu-item>HTML To Image</button>
+      <button [routerLink]="['/topdf']" mat-menu-item>HTML To PDF</button>
+  </mat-menu>
+</mat-toolbar>
+<div>
+  <router-outlet></router-outlet>
+</div>
